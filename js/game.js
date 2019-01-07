@@ -9,6 +9,8 @@ class MainController
     this.player;
     this.activeGrid;
     this.winner = 0; //-1 = draw
+
+    this.message = document.getElementById("message");
   }
 
   get tileWidth()
@@ -69,6 +71,7 @@ class MainController
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const grid = this.grid
     const subgrids = this.subgrids;
+    const message = this.message;
     let count;
 
     //tick subgrid
@@ -76,6 +79,8 @@ class MainController
     let moved = Subgrid.tickBatch(this);
     if(moved)
     {
+      message.innerHTML = "Status: Game in progress";
+
       //tick main grid
       count = 0;
       for(let i = 0; i < 3; i++)
@@ -115,9 +120,9 @@ class MainController
       });
     } else
     {
-      if(this.winner === 1) console.log("Cross player wins!");
-      if(this.winner === 2) console.log("Nought player wins!");
-      if(this.winner === -1) console.log("Game tied!");
+      if(this.winner === 1) message.innerHTML = "Status: Cross player wins!";
+      if(this.winner === 2) message.innerHTML = "Status: Nought player wins!";
+      if(this.winner === -1) message.innerHTML = "Status: Game tied!";
     }
   }
 
