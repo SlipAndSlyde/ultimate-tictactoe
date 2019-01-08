@@ -9,7 +9,6 @@ Ultimate TicTacToe is an extended version of TicTacToe. Similarly, 1 player uses
 https://docs.riddles.io/ultimate-tic-tac-toe/rules
 
 ## To-do list
-- visual feedback on who wins
 - ability to restart
 - revamp art
 - revamp design and layout

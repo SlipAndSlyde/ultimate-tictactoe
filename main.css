@@ -21,10 +21,14 @@ html, body {
   font-weight: bold;
 }
 
-.container-main #canvas {
+.container-main .container-canvas {
+  padding: 0.8em;
   border: 2px solid black;
   border-radius: 2em;
-  text-align: center;
+}
+
+.container-main #canvas {
+  border-radius: 1em;
 }
 
 .container-main p {
