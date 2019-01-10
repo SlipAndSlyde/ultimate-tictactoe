@@ -1,6 +1,9 @@
 # READ ME
 
 ## Introduction
+This project is an extension of:
+https://github.com/SlipAndSlyde/frameworks/tree/master/ultimate-tictactoe
+
 This project is a simple attempt at programming Ultimate TicTacToe in JavaScript. For more information, check:
 https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe.
 
